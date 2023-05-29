@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884473780422",
+    "project_id": "new-dca-digital-digest",
+    "storage_bucket": "new-dca-digital-digest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884473780422:android:1fe616ff995d8410d55fc7",
+        "android_client_info": {
+          "package_name": "com.dotconnectafrica.dca_digital_digests"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACU5bJDjdpWFnObZ0XL7nNOzekj0edAm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
