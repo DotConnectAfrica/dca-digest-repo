@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.dotconnectafrica.dca_digital_digests">
    <application
-        android:label="dca_digital_digests"
+        android:label="DCA Digital Digests"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

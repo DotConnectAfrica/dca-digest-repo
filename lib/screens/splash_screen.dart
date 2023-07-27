@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen>
         if (x == 1) {
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(
-              builder: (BuildContext context) => NewsPageScreen(),
+              builder: (BuildContext context) => LoginScreen(),
             ),
           );
         } else if (x == 2) {
