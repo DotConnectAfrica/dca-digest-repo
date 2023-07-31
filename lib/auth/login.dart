@@ -205,7 +205,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                                     SharedPreferences prefs = await SharedPreferences.getInstance();
                                     prefs.setBool('isLoggedIn', true);
-                                    showLoaderDialog(context, "Loading");
+                                    // showLoaderDialog(context, "Logging In ");
 
                                   } on FirebaseAuthException catch (e){
                                     if (e.code == 'user-not-found'){
@@ -279,23 +279,23 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-  showLoaderDialog(BuildContext context, String message) {
-    AlertDialog alert = AlertDialog(
-      content: Row(
-        children: [
-          const CircularProgressIndicator(),
-          Container(
-              margin: const EdgeInsets.only(left: 7),
-              child: Text("${message}...")),
-        ],
-      ),
-    );
-    showDialog(
-      barrierDismissible: false,
-      context: context,
-      builder: (BuildContext context) {
-        return alert;
-      },
-    );
-  }
+  // showLoaderDialog(BuildContext context, String message) {
+  //   AlertDialog alert = AlertDialog(
+  //     content: Row(
+  //       children: [
+  //         const CircularProgressIndicator(),
+  //         Container(
+  //             margin: const EdgeInsets.only(left: 7),
+  //             child: Text("${message}...")),
+  //       ],
+  //     ),
+  //   );
+  //   showDialog(
+  //     barrierDismissible: false,
+  //     context: context,
+  //     builder: (BuildContext context) {
+  //       return alert;
+  //     },
+  //   );
+  // }
 }

@@ -415,7 +415,13 @@ class _NewsPageScreen extends State<NewsPageScreen>{
                                 ),
                                 InkWell(
                                   onTap: () {
-                                    // Add your logic for handling the "Read more" action here
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            ScreenWebView(news_next.title, news_next.link),
+                                      ),
+                                    );
                                   },
                                   child: const Padding(
                                     padding: EdgeInsets.symmetric(vertical: 8.0),
@@ -502,7 +508,13 @@ class _NewsPageScreen extends State<NewsPageScreen>{
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      // Add your logic for handling the "Read more" action here
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              ScreenWebView(news_next.title, news_next.link),
+                                        ),
+                                      );
                                     },
                                     child: const Padding(
                                       padding: EdgeInsets.symmetric(vertical: 8.0),
