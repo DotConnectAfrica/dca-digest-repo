@@ -1,6 +1,6 @@
 # dca_digital_digests
 
-A new Flutter project.
+A new Flutter project- Web scraping
 
 ## Getting Started
 
