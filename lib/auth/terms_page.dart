@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'news_page.dart';
+import '../screens/news_page.dart';
 
-class Terms extends StatefulWidget {
+
+class TermsPage extends StatefulWidget {
   int source=0;
   Terms(int source){
     this.source==source;
@@ -12,7 +13,7 @@ class Terms extends StatefulWidget {
   _Terms createState() => _Terms();
 }
 
-class _Terms extends State<Terms>{
+class _Terms extends State<TermsPage>{
 
 
   @override
