@@ -1,3 +1,4 @@
+import 'package:dca_digital_digests/auth/terms_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/gestures.dart';
@@ -288,7 +289,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                     if (newUser != null) {
                                       Navigator.of(context).pushReplacement(
                                         MaterialPageRoute(
-                                          builder: (BuildContext context) => NewsPageScreen(),
+                                          builder: (BuildContext context) => TermsPage(),
                                         ),
                                       );
                                     }
