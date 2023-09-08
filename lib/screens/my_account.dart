@@ -208,6 +208,7 @@ class _ScreenMyAccountState extends State<ScreenMyAccount> {
                           margin: EdgeInsets.only(top: 8, bottom: 8),
                           child: InkWell(
                             onTap: (){
+                              // _showLogoutConfirmationDialog(context);
 
                               //log out of firebase
                               FirebaseAuth.instance.signOut();
@@ -252,6 +253,40 @@ class _ScreenMyAccountState extends State<ScreenMyAccount> {
           ),
         ),
       ),
+    );
+  }
+
+  void _showLogoutConfirmationDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Confirm Logout'),
+          content: Text('Are you sure you want to logout?'),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Cancel'),
+              onPressed: () {
+                Navigator.of(context).pop(); // Close the dialog
+              },
+            ),
+            TextButton(
+              child: Text('Logout'),
+              onPressed: () async {
+                // Log out of Firebase
+                await FirebaseAuth.instance.signOut();
+
+                // Navigate to the login screen
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => LoginScreen(),
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 

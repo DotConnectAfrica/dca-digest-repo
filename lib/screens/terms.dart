@@ -30,7 +30,7 @@ class _Terms extends State<Terms>{
 
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor:Colors.white,
+        backgroundColor:Colors.green,
         foregroundColor: Colors.black,
         onPressed: ()  {
 
@@ -49,8 +49,7 @@ class _Terms extends State<Terms>{
           // Navigator.pushReplacementNamed(context, '/dashboard');
 
         },
-        icon: Icon(Icons.arrow_forward_ios_rounded),
-        label: Text("Accept"),
+        label: Text("Accept and Move on"),
       ),
 
       body:SingleChildScrollView(
