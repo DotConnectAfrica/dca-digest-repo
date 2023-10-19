@@ -264,7 +264,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
                                         BorderRadius.circular(5.0)),
-                                    backgroundColor: Colors.pinkAccent),
+                                        
+                                primary: Colors.pinkAccent, 
+                                    ),
                                 onPressed: () async {
                                   setState(() {
                                     showSpinner = true;

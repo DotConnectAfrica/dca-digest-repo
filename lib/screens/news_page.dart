@@ -59,9 +59,9 @@ class _NewsPageScreen extends State<NewsPageScreen>{
                           size: 30.5,
                         )),
                     const Text("DCA DIGITAL DIGEST", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),),
-                    Badge(
-                      largeSize: 9,
-                      label: Container(),
+                    Container(
+                      // largeSize: 9,
+                      // label: Container(),
                       alignment: const AlignmentDirectional(35, 8),
                       child: IconButton(
                           onPressed: () {

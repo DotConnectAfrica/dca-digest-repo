@@ -188,7 +188,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
                                         BorderRadius.circular(5.0)),
-                                    backgroundColor: Colors.pinkAccent),
+                                   primary: Colors.pinkAccent, ),
                                 onPressed: () async {
 
                                   final FirebaseAuth _auth = FirebaseAuth.instance;

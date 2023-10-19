@@ -205,7 +205,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                           style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5.0)),
-                              backgroundColor: Colors.pinkAccent),
+                              primary: Colors.pinkAccent),
                           onPressed: () {
                             // Navigator.of(context).push(MaterialPageRoute(
                             //   builder: (context) {
